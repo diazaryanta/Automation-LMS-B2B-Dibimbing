@@ -15,7 +15,7 @@ import java.util.Map;
 public class EditEmployeeAPITest extends BaseAPITest {
 
     private String freshSessionCookie;
-    private String targetEmployeeId = "049767a8-e15f-42fc-8f4b-50b2947c52b7";
+    private String targetEmployeeId = "0746dcda-48dd-403e-88df-4ce347b68a5f";
 
     @BeforeClass
     public void setupAuth() {

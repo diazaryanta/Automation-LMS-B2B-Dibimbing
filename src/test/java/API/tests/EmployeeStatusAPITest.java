@@ -13,7 +13,7 @@ import java.io.IOException;
 public class EmployeeStatusAPITest extends BaseAPITest {
 
     private String freshSessionCookie;
-    private String targetEmployeeId = "065c2ba6-4ff0-4431-896c-63d74f5e25ec";
+    private String targetEmployeeId = "0746dcda-48dd-403e-88df-4ce347b68a5f";
 
     @BeforeClass
     public void setupAuth() {
