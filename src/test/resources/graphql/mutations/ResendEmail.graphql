@@ -1,0 +1,6 @@
+mutation resendEmployeePasswordEmail($employeeId: String!) {
+    resendEmployeePasswordEmail(employeeId: $employeeId) {
+        id
+        __typename
+    }
+}

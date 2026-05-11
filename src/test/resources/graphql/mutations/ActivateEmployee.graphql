@@ -1,0 +1,3 @@
+mutation activateEmployee($id: String!) {
+    activateEmployee(id: $id)
+}
