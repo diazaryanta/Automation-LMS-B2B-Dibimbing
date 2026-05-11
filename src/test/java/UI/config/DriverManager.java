@@ -15,8 +15,9 @@ public class DriverManager {
             WebDriverManager.chromedriver().setup();
 
             ChromeOptions options = new ChromeOptions();
-            options.addArguments("--start-maximized"); // Buka layar full
+            options.addArguments("--start-maximized");
             options.addArguments("--remote-allow-origins=*");
+            options.addArguments("--window-size=1920,1080");
 
             WebDriver webDriver = new ChromeDriver(options);
 

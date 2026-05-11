@@ -2,7 +2,7 @@
 
 Proyek ini merupakan framework automasi pengujian untuk platform **[LMS B2B (Dibimbing)](https://lms-b2b.do.dibimbing.id/dibimbingqa/login)**. Framework ini mencakup pengujian pada level **UI (Frontend)** menggunakan Selenium dan **API (Backend)** menggunakan RestAssured, yang diintegrasikan dengan **CI/CD** dan notifikasi **Slack**.
 
-Proyek ini dikerjakan untuk memenuhi syarat **assignment mini project dibimbing day 30**. Silakan klik link berikut untuk melihat **[QA Report (Documentation)](https://docs.google.com/document/d/1LLAV7yfcufok-lBCGgFqZS-t1FLD2MKLaV1-k49AUqg/edit?usp=sharing)**.
+Proyek ini dikerjakan untuk memenuhi syarat **assignment final project Dibimbing**. Silakan klik link berikut untuk melihat **[QA Report (Documentation)](https://docs.google.com/document/d/1LLAV7yfcufok-lBCGgFqZS-t1FLD2MKLaV1-k49AUqg/edit?usp=sharing)**.
 
 ---
 
@@ -21,7 +21,7 @@ Proyek ini dikerjakan untuk memenuhi syarat **assignment mini project dibimbing 
 
 ## 📁 Struktur Proyek (Page Object Model)
 
-Proyek ini dibangun menggunakan konsep **Page Object Model (POM)** untuk memisahkan antara logika pengujian, elemen halaman (locators), dan setup framework agar lebih modular.
+Proyek ini dibangun menggunakan konsep **Page Object Model (POM)** untuk memisahkan antara logika pengujian, elemen halaman (*locators*), dan setup framework agar lebih modular.
 
 ```text
 Automation-LMS-B2B-Dibimbing/
@@ -50,7 +50,7 @@ Automation-LMS-B2B-Dibimbing/
 
 ```
 ---
-## ⚙️ Persiapan Awal (Prerequisites)
+## ⚙️ Persiapan Awal *(Prerequisites)*
 
 Sebelum mulai nge-run proyek ini, pastikan sudah menginstall *tools* di bawah ini:
 1.  **Java Development Kit (JDK):** Versi 17, atau 21.
@@ -62,8 +62,7 @@ Sebelum mulai nge-run proyek ini, pastikan sudah menginstall *tools* di bawah in
 ### Opsi 1: Lewat IntelliJ IDEA
 1. Buka file skenario test di folder `src/test/java/UI/tests/` atau `API/tests/`.
 2. Cari ikon **Play (Segitiga Hijau)** di sebelah kiri tulisan nama *class* atau *method*.
-3. Klik ikon tersebut lalu pilih **Run 'TicketTest...'**.
-4. Hasil pengujian akan muncul di tab Console/Run dan laporan HTML akan diperbarui di folder `reports/`.
+3. Hasil pengujian akan muncul di tab Console/Run dan laporan HTML akan diperbarui di folder `reports/`.
 
 ### Opsi 2: Lewat Terminal (Pake Gradle)
 Kalau mau nge-run semua test sekaligus lewat file konfigurasi XML:
