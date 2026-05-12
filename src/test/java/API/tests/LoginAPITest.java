@@ -88,13 +88,12 @@ public class LoginAPITest extends BaseAPITest {
             Assert.assertNotNull(errorMessageStr, "BUG (" + scenarioName + "): API tidak memberikan pesan error sama sekali!");
             test.info("Error message yang ditangkap: " + errorMessageStr);
 
-            if (errorMessageStr.toLowerCase().contains("wrong username or password")) {
-                String failMessage = "FAILED (" + scenarioName + "): Pesan error adalah 'wrong username or password'.";
-                test.fail(failMessage);
-                Assert.fail(failMessage);
-            } else {
-                test.pass("Aman: Pesan error yang didapat BUKAN 'wrong username or password'.");
-            }
+            boolean isExpectedError = errorMessageStr.toLowerCase().contains("wrong username or password");
+
+            Assert.assertTrue(isExpectedError,
+                    "FAILED (" + scenarioName + "): Ekspektasi error adalah 'wrong username or password', tetapi yang didapat: '" + errorMessageStr + "'");
+
+            test.pass("Skenario Sukses: API berhasil menolak login dan menampilkan pesan error yang tepat ('" + errorMessageStr + "').");
         }
     }
 }

@@ -32,7 +32,7 @@ public class CreateEmployeeAPITest extends BaseAPITest {
     public void testCreateEmployeeSuccess() throws IOException {
         test.info("Menyiapkan payload variabel dengan email unik...");
 
-        String uniqueEmail = "apitesting_" + System.currentTimeMillis() + "@dibimbing.id";
+        String uniqueEmail = "apitesting" + System.currentTimeMillis();
 
         Map<String, Object> inputMap = new HashMap<>();
         inputMap.put("name", "API Testing Sukses");
@@ -82,18 +82,17 @@ public class CreateEmployeeAPITest extends BaseAPITest {
         Assert.assertEquals(response.statusCode(), 200, "Status code GraphQL harus 200!");
 
         String errorMessage = response.jsonPath().getString("errors[0].message");
-        Assert.assertNotNull(errorMessage, "Seharusnya ada error message!");
+        Assert.assertNotNull(errorMessage, "BUG: Seharusnya GraphQL mengembalikan error message!");
         test.info("Error message yang ditangkap: " + errorMessage);
 
         String expectedErrorMsg = "The user with this email is already registered, please use another email";
 
-        if (errorMessage.contains(expectedErrorMsg)) {
-            String failMessage = "Mendapat pesan error duplicate email '" + expectedErrorMsg;
-            test.fail(failMessage);
-            Assert.fail(failMessage);
-        } else {
-            test.pass("Aman: Pesan error yang didapat BUKAN duplicate email.");
-        }
+        boolean isExpectedError = errorMessage.contains(expectedErrorMsg);
+
+        Assert.assertTrue(isExpectedError,
+                "FAILED: Ekspektasi error adalah '" + expectedErrorMsg + "', tetapi yang didapat: '" + errorMessage + "'");
+
+        test.pass("Skenario Sukses: API berhasil menolak email duplikat dan menampilkan pesan error yang tepat.");
     }
 
 }
