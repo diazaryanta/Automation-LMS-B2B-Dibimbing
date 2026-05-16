@@ -65,19 +65,24 @@ Automation-LMS-B2B-Dibimbing/
 | Resend Email Acc      |        ✅         |                           Berhasil kirim ulang email, dan langsung muncul notifikasi sukses di pojok layar.                           |
 | Action Download       |        ✅         |                           File Excel/CSV berhasil ter- download dengan aman sampai masuk ke folder laptop.                            |
 | Delete Employee       |        ✅         |                                       Menghapus data employee dari database dan tabel employee                                        |
-| **Total Skenario:**   | **10 ✅<br/>0 ❌** |                                               **Cakupan: Modul Login & Employee List**                                                |
+| Add Program Studi     |        ✅         |                 Berhasil menambahkan nama Program Studi baru ke dalam sistem dan data langsung muncul di tabel utama.                 |
+| Search Program Studi  |        ✅         |                   Fitur pencarian berfungsi dengan baik dan tepat sasaran saat mencari nama Program Studi tertentu.                   |
+| Edit Program Studi    |        ✅         |                        Perubahan detail data Program Studi berhasil disimpan dan langsung ter-update di layar.                        |
+| Export CSV            |        ✅         |           File CSV yang berisi daftar lengkap Program Studi sukses ter-download dengan aman sampai masuk ke folder laptop.            |
+| Delete Program Studi  |        ✅         |                                     Menghapus data program studi dari database dan tabel employee                                     |
+| **Total Skenario:**   | **15 ✅<br/>0 ❌** |                                        **Cakupan: Modul Login, Employee List & Program Studi**                                        |
 
-**API TESTING**
+**API TESTING (GraphQL)**
 
-| **Fitur**            |   **Status**    |                                          **Catatan**                                           |
-|:---------------------|:---------------:|:----------------------------------------------------------------------------------------------:|
-| Login                |        ✅        |      Berhasil autentikasi dengan akun Admin, termasuk validasi error pada negative test.       |
-| Add Program Studi    |        ✅        |                  Berhasil menambahkan nama Program Studi baru ke dalam tabel.                  |
-| Search Program Studi |        ✅        |           Fitur pencarian khusus untuk Program Studi berjalan dengan tepat sasaran.            |
-| Edit Program Studi   |        ✅        |             Data Program Studi berhasil diubah, disimpan, dan langsung ter-update.             |
-| Export CSV           |        ✅        | File CSV berisi daftar Program Studi sukses ter-download hingga sampai masuk ke folder laptop. |
-| Delete Program Studi |        ✅        |              Menghapus data program studi dari database dan tabel program studi.               |
-| **Total Skenario:**   | **6 ✅<br/>0 ❌** |                            **Cakupan: Modul Login & Program Studi**                            |
+| **Fitur**            |   **Status**    |                                                                                       **Catatan**                                                                                        |
+|:---------------------|:---------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Login                |        ✅        |      Berhasil login dan mendapatkan akses masuk *(token)*. Pengujian juga memastikan sistem otomatis menolak dengan benar jika password salah, kosong, atau formatnya tidak sesuai.      |
+| Create Employee      |        ✅        | Berhasil memasukkan data karyawan baru langsung ke sistem. Sudah dipastikan juga: kalau emailnya dobel atau ada data wajib yang kosong, sistem akan langsung menolaknya secara otomatis. |
+| Edit Employee        |        ✅        |                                                Perubahan data karyawan berhasil diterima, diproses, dan disimpan dengan baik oleh sistem.                                                |
+| Employee Status      |        ✅        |                              Berhasil mengubah status karyawan (menjadi Aktif atau Tidak Aktif) secara instan melalui jalur komunikasi sistem *(backend)*.                               |
+| Resend Email         |        ✅        |                                          Sistem sukses menerima dan merespons instruksi untuk mengirimkan ulang email kepada karyawan terkait.                                           |
+| Create Program Studi |        ✅        |                                                  Berhasil menambahkan data program studi baru secara langsung ke dalam database utama.                                                   |
+| **Total Skenario:**  | **6 ✅<br/>0 ❌** |                                                                 **Cakupan: Modul Login, Employee List & Program Studi**                                                                  |
 ---
 ## ⚙️ Persiapan Awal *(Prerequisites)*
 
