@@ -3,12 +3,27 @@
 
     <test name="Regression API Tests">
         <classes>
+
+            //==============
+            // --- LOGIN ---
+            //==============
+
             <class name="API.tests.LoginAPITest"/>
-            <class name="API.tests.CreateEmployeeAPITest"/>
-            <class name="API.tests.CreateProgramStudiAPITest"/>
-            <class name="API.tests.EditEmployeeAPITest"/>
-            <class name="API.tests.EmployeeStatusAPITest"/>
-            <class name="API.tests.ResendEmailAPITest"/>
+
+            //======================
+            // --- EMPLOYEE ---
+            //======================
+
+            <class name="API.tests.Employee.CreateEmployeeAPITest"/>
+            <class name="API.tests.Employee.EditEmployeeAPITest"/>
+            <class name="API.tests.Employee.EmployeeStatusAPITest"/>
+            <class name="API.tests.Employee.ResendEmailAPITest"/>
+
+            //======================
+            // --- PROGRAM STUDI ---
+            //======================
+            <class name="API.tests.ProgramStudi.CreateProgramStudiAPITest"/>
+
         </classes>
     </test>
 

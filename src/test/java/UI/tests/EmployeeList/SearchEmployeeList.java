@@ -21,7 +21,6 @@ public class SearchEmployeeList extends BaseUITest {
     @DataProvider(name = "searchData")
     public Object[][] getSearchData() {
         return new Object[][] {
-                /*{"Search by Name", "Fitur Search"},*/
                 {"Search by Email", "fitursearch@dibimbing.id"}
         };
     }

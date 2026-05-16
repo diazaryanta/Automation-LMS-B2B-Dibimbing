@@ -1,4 +1,4 @@
-package API.tests;
+package API.tests.ProgramStudi;
 
 import API.base.BaseAPITest;
 import API.services.AuthService;

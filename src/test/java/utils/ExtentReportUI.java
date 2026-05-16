@@ -26,9 +26,9 @@ public class ExtentReportUI {
             extent.setSystemInfo("Operating System", "MacOS");
             extent.setSystemInfo("Version Details",
                     "- RestAssured: v5.3.0 <br>" +
-                            "- Chrome: v147.0.7727.138 <br>" +
-                            "- Postman for Mac: v12.2.4 <br>" +
-                            "- MacOS Tahoe: v26.4.1 <br>" +
+                            "- Chrome: v148.0.7778.168 <br>" +
+                            "- Postman for Mac: v12.10.6 <br>" +
+                            "- MacOS Tahoe: v26.5 <br>" +
                             "- Java: v21 <br>" +
                             "- App Version: 1.0.0");
             extent.setSystemInfo("UI Base URL", "https://lms-b2b.do.dibimbing.id/dibimbingqa/login");

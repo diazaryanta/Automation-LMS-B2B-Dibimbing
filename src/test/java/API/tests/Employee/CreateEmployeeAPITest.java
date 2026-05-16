@@ -1,4 +1,4 @@
-package API.tests;
+package API.tests.Employee;
 
 import API.base.BaseAPITest;
 import API.services.AuthService;

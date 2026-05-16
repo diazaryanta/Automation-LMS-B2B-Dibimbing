@@ -12,8 +12,6 @@ import java.time.Duration;
 public class ProgramStudiPage {
     private WebDriver driver;
     private WebDriverWait wait;
-
-    // Script khusus yang sudah di-upgrade agar support <input> DAN <textarea>
     private final String reactBypassScript =
             "var el = arguments[0]; " +
                     "var val = arguments[1]; " +
@@ -56,7 +54,6 @@ public class ProgramStudiPage {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
-        // Gunakan script Bypass React pintar
         js.executeScript(reactBypassScript, nameEl, name);
         js.executeScript(reactBypassScript, descEl, description);
     }

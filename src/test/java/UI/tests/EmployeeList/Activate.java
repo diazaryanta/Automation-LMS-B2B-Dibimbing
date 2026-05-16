@@ -24,25 +24,20 @@ public class Activate extends BaseUITest {
         logger.info("=== Eksekusi Skenario: Activate / Inactivate CreateEmployeeAPITest ===");
         test.info("=== Eksekusi Skenario: Activate / Inactivate CreateEmployeeAPITest ===");
 
-        // 1. LoginAPITest & Navigasi ke menu CreateEmployeeAPITest
         loginPage.loginToLms(ConfigReader.getProperty("email"), ConfigReader.getProperty("password"));
         employeePage.clickEmployeeMenu();
 
-        // 2. Masuk ke halaman Detail CreateEmployeeAPITest baris pertama
         test.info("Mengklik tombol Detail pada baris pertama...");
         employeePage.clickFirstRowDetailButton();
 
-        // Mengamankan transisi URL menggunakan Smart Wait
         test.info("Menunggu transisi URL ke halaman Detail CreateEmployeeAPITest...");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         boolean isUrlChangedToDetail = wait.until(ExpectedConditions.urlMatches(".*/admin/employee/[a-zA-Z0-9-]+"));
         Assert.assertTrue(isUrlChangedToDetail, "Bug: URL gagal bertransisi ke halaman detail!");
 
-        // 3. Eksekusi tombol Activate/Inactivate di halaman detail
         test.info("Mengeksekusi tombol Activate/Inactivate...");
         employeePage.clickActivationButton();
 
-        // 4. Konfirmasi pada modal pop-up
         test.info("Menunggu modal muncul dan mengklik tombol konfirmasi...");
         employeePage.clickConfirmActivationButton();
 

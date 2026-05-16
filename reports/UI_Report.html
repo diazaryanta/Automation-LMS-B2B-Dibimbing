@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">UI Test Execution Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 11, 2026 07:15:15 PM</span></a>
+<a href="#"><span class="badge badge-primary">May 16, 2026 01:53:58 PM</span></a>
 </li>
 </ul>
 </div>
@@ -67,6 +67,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,9 +80,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Activate : testActivateEmployee</p>
+            <p class="name">LoginUITest : testLoginSuccessfully</p>
             <p class="text-sm">
-              <span>7:15:15 PM</span> / <span>00:00:08:761</span>
+              <span>1:53:58 PM</span> / <span>00:00:03:193</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -89,10 +90,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Activate : testActivateEmployee</h5>
-<span class='badge badge-success'>05.11.2026 7:15:15 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:24 PM</span>
-<span class='badge badge-default'>00:00:08:761</span>
+<h5 class="test-status text-pass">LoginUITest : testLoginSuccessfully</h5>
+<span class='badge badge-success'>05.16.2026 1:53:58 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:54:01 PM</span>
+<span class='badge badge-default'>00:00:03:193</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -105,23 +106,44 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:15:22 PM</td>
+        <td>1:54:00 PM</td>
         <td>
           Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:15:22 PM</td>
+        <td>1:54:00 PM</td>
         <td>
-          === Eksekusi Skenario: Activate / Inactivate CreateEmployeeAPITest ===
+          Mencoba login dengan email: arwendymelyn@dibimbing.id
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>7:15:24 PM</td>
+        <td>1:54:00 PM</td>
         <td>
-          Mengklik tombol Detail pada baris pertama...
+          Menunggu halaman dashboard dimuat...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:54:01 PM</td>
+        <td>
+          Memverifikasi apakah URL berubah ke dashboard...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:54:01 PM</td>
+        <td>
+          Assertion Lulus: Berhasil masuk ke halaman Dashboard!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:54:01 PM</td>
+        <td>
+          Test Berhasil!
         </td>
       </tr>
   </tbody>
@@ -136,7 +158,7 @@
           <div class="test-detail">
             <p class="name">AddEmployee : Test Valid</p>
             <p class="text-sm">
-              <span>7:15:34 PM</span> / <span>00:00:00:000</span>
+              <span>1:54:01 PM</span> / <span>00:00:20:065</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -145,322 +167,591 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">AddEmployee : Test Valid</h5>
-<span class='badge badge-success'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>05.16.2026 1:54:01 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:54:21 PM</span>
+<span class='badge badge-default'>00:00:20:065</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:54:02 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:54:02 PM</td>
+        <td>
+          === Memulai: Test Valid ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:54:21 PM</td>
+        <td>
+          Skenario Positif Berhasil: Data valid diterima dan form tertutup.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:54:21 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="fail" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">AddProgramStudi : Test Valid</p>
+            <p class="name">AddEmployee : Scenario Name Null</p>
             <p class="text-sm">
-              <span>7:15:34 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:54:31 PM</span> / <span>00:00:10:301</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">AddProgramStudi : Test Valid</h5>
-<span class='badge badge-success'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-fail">AddEmployee : Scenario Name Null</h5>
+<span class='badge badge-success'>05.16.2026 1:54:31 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:54:41 PM</span>
+<span class='badge badge-default'>00:00:10:301</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:54:32 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:54:32 PM</td>
+        <td>
+          === Memulai: Scenario Name Null ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:54:41 PM</td>
+        <td>
+          Test Gagal: Scenario Name Null terdapat bug.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddEmployeeScenarios_1778914481907.png' src="screenshot/testAddEmployeeScenarios_1778914481907.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
-        <li class="test-item"  status="pass" test-id="4"
+        <li class="test-item"  status="fail" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">AssignedProgram : testAssignedProgram</p>
+            <p class="name">AddEmployee : Scenario Employee ID Null</p>
             <p class="text-sm">
-              <span>7:15:34 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:54:42 PM</span> / <span>00:00:08:866</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">AssignedProgram : testAssignedProgram</h5>
-<span class='badge badge-success'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-fail">AddEmployee : Scenario Employee ID Null</h5>
+<span class='badge badge-success'>05.16.2026 1:54:42 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:54:50 PM</span>
+<span class='badge badge-default'>00:00:08:866</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:54:43 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:54:43 PM</td>
+        <td>
+          === Memulai: Scenario Employee ID Null ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:54:50 PM</td>
+        <td>
+          Test Gagal: Scenario Employee ID Null terdapat bug.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddEmployeeScenarios_1778914490886.png' src="screenshot/testAddEmployeeScenarios_1778914490886.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
-        <li class="test-item"  status="pass" test-id="5"
+        <li class="test-item"  status="fail" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">DeleteEmployee : testDeleteEmployee</p>
+            <p class="name">AddEmployee : Scenario Email Duplicate</p>
             <p class="text-sm">
-              <span>7:15:34 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:54:50 PM</span> / <span>00:00:08:426</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">DeleteEmployee : testDeleteEmployee</h5>
-<span class='badge badge-success'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-fail">AddEmployee : Scenario Email Duplicate</h5>
+<span class='badge badge-success'>05.16.2026 1:54:50 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:54:59 PM</span>
+<span class='badge badge-default'>00:00:08:426</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:54:52 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:54:52 PM</td>
+        <td>
+          === Memulai: Scenario Email Duplicate ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:54:59 PM</td>
+        <td>
+          Test Gagal: Scenario Email Duplicate terdapat bug.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddEmployeeScenarios_1778914499401.png' src="screenshot/testAddEmployeeScenarios_1778914499401.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
-        <li class="test-item"  status="pass" test-id="6"
+        <li class="test-item"  status="fail" test-id="6"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">DeleteProgramStudi : testDeleteProgramStudi</p>
+            <p class="name">AddEmployee : Scenario Phone Invalid</p>
             <p class="text-sm">
-              <span>7:15:34 PM</span> / <span>00:00:00:001</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:54:59 PM</span> / <span>00:00:07:803</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">DeleteProgramStudi : testDeleteProgramStudi</h5>
-<span class='badge badge-success'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-default'>00:00:00:001</span>
+<h5 class="test-status text-fail">AddEmployee : Scenario Phone Invalid</h5>
+<span class='badge badge-success'>05.16.2026 1:54:59 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:55:07 PM</span>
+<span class='badge badge-default'>00:00:07:803</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:00 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:00 PM</td>
+        <td>
+          === Memulai: Scenario Phone Invalid ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:55:07 PM</td>
+        <td>
+          Test Gagal: Scenario Phone Invalid terdapat bug.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddEmployeeScenarios_1778914507299.png' src="screenshot/testAddEmployeeScenarios_1778914507299.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
-        <li class="test-item"  status="pass" test-id="7"
+        <li class="test-item"  status="fail" test-id="7"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">ActionDownload : testDownloadEmployeeData</p>
+            <p class="name">AddEmployee : Scenario Role Null</p>
             <p class="text-sm">
-              <span>7:15:34 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:55:07 PM</span> / <span>00:00:07:928</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">ActionDownload : testDownloadEmployeeData</h5>
-<span class='badge badge-success'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-fail">AddEmployee : Scenario Role Null</h5>
+<span class='badge badge-success'>05.16.2026 1:55:07 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:55:15 PM</span>
+<span class='badge badge-default'>00:00:07:928</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:08 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:08 PM</td>
+        <td>
+          === Memulai: Scenario Role Null ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:55:15 PM</td>
+        <td>
+          Test Gagal: Scenario Role Null terdapat bug.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddEmployeeScenarios_1778914515317.png' src="screenshot/testAddEmployeeScenarios_1778914515317.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
-        <li class="test-item"  status="pass" test-id="8"
+        <li class="test-item"  status="fail" test-id="8"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">EditEmployee : testEditEmployee</p>
+            <p class="name">AddEmployee : Scenario All Field Null</p>
             <p class="text-sm">
-              <span>7:15:34 PM</span> / <span>00:00:00:001</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:55:15 PM</span> / <span>00:00:07:719</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">EditEmployee : testEditEmployee</h5>
-<span class='badge badge-success'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:34 PM</span>
-<span class='badge badge-default'>00:00:00:001</span>
+<h5 class="test-status text-fail">AddEmployee : Scenario All Field Null</h5>
+<span class='badge badge-success'>05.16.2026 1:55:15 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:55:23 PM</span>
+<span class='badge badge-default'>00:00:07:719</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:16 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:16 PM</td>
+        <td>
+          === Memulai: Scenario All Field Null ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:55:23 PM</td>
+        <td>
+          Test Gagal: Scenario All Field Null terdapat bug.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddEmployeeScenarios_1778914523133.png' src="screenshot/testAddEmployeeScenarios_1778914523133.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
-        <li class="test-item"  status="pass" test-id="10"
+        <li class="test-item"  status="fail" test-id="9"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">EditProgramStudi : testEditProgramStudi</p>
+            <p class="name">AddEmployee : Scenario Special Character</p>
             <p class="text-sm">
-              <span>7:15:35 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:55:23 PM</span> / <span>00:00:07:712</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">EditProgramStudi : testEditProgramStudi</h5>
-<span class='badge badge-success'>05.11.2026 7:15:35 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:35 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-fail">AddEmployee : Scenario Special Character</h5>
+<span class='badge badge-success'>05.16.2026 1:55:23 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:55:30 PM</span>
+<span class='badge badge-default'>00:00:07:712</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:24 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:24 PM</td>
+        <td>
+          === Memulai: Scenario Special Character ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:55:30 PM</td>
+        <td>
+          Test Gagal: Scenario Special Character terdapat bug.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddEmployeeScenarios_1778914530938.png' src="screenshot/testAddEmployeeScenarios_1778914530938.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AddEmployee : Scenario Emoticon</p>
+            <p class="text-sm">
+              <span>1:55:31 PM</span> / <span>00:00:07:655</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">AddEmployee : Scenario Emoticon</h5>
+<span class='badge badge-success'>05.16.2026 1:55:31 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:55:38 PM</span>
+<span class='badge badge-default'>00:00:07:655</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:32 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:32 PM</td>
+        <td>
+          === Memulai: Scenario Emoticon ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:55:38 PM</td>
+        <td>
+          Test Gagal: Scenario Emoticon terdapat bug.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddEmployeeScenarios_1778914538687.png' src="screenshot/testAddEmployeeScenarios_1778914538687.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
-        <li class="test-item"  status="pass" test-id="11"
+        <li class="test-item"  status="fail" test-id="11"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">ExportCSV : testExportCSV</p>
+            <p class="name">AddEmployee : Scenario Unique Symbols</p>
             <p class="text-sm">
-              <span>7:15:35 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>1:55:38 PM</span> / <span>00:00:07:709</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">ExportCSV : testExportCSV</h5>
-<span class='badge badge-success'>05.11.2026 7:15:35 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:35 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<h5 class="test-status text-fail">AddEmployee : Scenario Unique Symbols</h5>
+<span class='badge badge-success'>05.16.2026 1:55:38 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:55:46 PM</span>
+<span class='badge badge-default'>00:00:07:709</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:40 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:40 PM</td>
+        <td>
+          === Memulai: Scenario Unique Symbols ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:55:46 PM</td>
+        <td>
+          Test Gagal: Scenario Unique Symbols terdapat bug.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddEmployeeScenarios_1778914546489.png' src="screenshot/testAddEmployeeScenarios_1778914546489.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
         <li class="test-item"  status="pass" test-id="12"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">FilterByAngkatan : 2024 Ganjil</p>
-            <p class="text-sm">
-              <span>7:15:35 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">FilterByAngkatan : 2024 Ganjil</h5>
-<span class='badge badge-success'>05.11.2026 7:15:35 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:35 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div>          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="22"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">LoginUITest : testLoginSuccessfully</p>
-            <p class="text-sm">
-              <span>7:15:37 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">LoginUITest : testLoginSuccessfully</h5>
-<span class='badge badge-success'>05.11.2026 7:15:37 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:37 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div>          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="23"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">ResendEmailAcc : testResendEmailAccount</p>
-            <p class="text-sm">
-              <span>7:15:37 PM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">ResendEmailAcc : testResendEmailAccount</h5>
-<span class='badge badge-success'>05.11.2026 7:15:37 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:37 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div>          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="24"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
             <p class="name">SearchEmployeeList : Search by Email</p>
             <p class="text-sm">
-              <span>7:15:37 PM</span> / <span>00:00:00:000</span>
+              <span>1:55:46 PM</span> / <span>00:00:10:029</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -469,25 +760,1467 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">SearchEmployeeList : Search by Email</h5>
-<span class='badge badge-success'>05.11.2026 7:15:37 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:37 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
+<span class='badge badge-success'>05.16.2026 1:55:46 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:55:56 PM</span>
+<span class='badge badge-default'>00:00:10:029</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:47 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:47 PM</td>
+        <td>
+          === Eksekusi Skenario: Search by Email ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:48 PM</td>
+        <td>
+          Ketik keyword: fitursearch@dibimbing.id
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:49 PM</td>
+        <td>
+          Menunggu data di tabel ter-update sesuai keyword...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:56 PM</td>
+        <td>
+          Validasi data yang muncul di tabel...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:55:56 PM</td>
+        <td>
+          Data fitursearch@dibimbing.id berhasil ditemukan di tabel hasil pencarian.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:55:56 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">EditEmployee : testEditEmployee</p>
+            <p class="text-sm">
+              <span>1:55:56 PM</span> / <span>00:00:10:030</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EditEmployee : testEditEmployee</h5>
+<span class='badge badge-success'>05.16.2026 1:55:56 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:56:06 PM</span>
+<span class='badge badge-default'>00:00:10:030</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:58 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:58 PM</td>
+        <td>
+          === Eksekusi Skenario: Edit CreateEmployeeAPITest ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:55:59 PM</td>
+        <td>
+          Mengklik tombol Detail pada baris pertama...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:05 PM</td>
+        <td>
+          Menunggu transisi URL ke halaman Detail CreateEmployeeAPITest...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:06 PM</td>
+        <td>
+          Mengklik tombol Edit CreateEmployeeAPITest...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:06 PM</td>
+        <td>
+          Mengisi form Edit CreateEmployeeAPITest dengan data yang diperbarui...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:06 PM</td>
+        <td>
+          Menyimpan perubahan (Save Changes)...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:06 PM</td>
+        <td>
+          Skenario Sukses: Form Edit CreateEmployeeAPITest berhasil diisi dan disubmit tanpa hambatan.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:06 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FilterByAngkatan : 2024 Ganjil</p>
+            <p class="text-sm">
+              <span>1:56:06 PM</span> / <span>00:00:08:930</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FilterByAngkatan : 2024 Ganjil</h5>
+<span class='badge badge-success'>05.16.2026 1:56:06 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:56:15 PM</span>
+<span class='badge badge-default'>00:00:08:930</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:08 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:08 PM</td>
+        <td>
+          === Eksekusi Skenario: Filter Angkatan 2024 Ganjil ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:08 PM</td>
+        <td>
+          Memilih angkatan: 2024 Ganjil dari dropdown...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:09 PM</td>
+        <td>
+          Menunggu UI merespons filter...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:09 PM</td>
+        <td>
+          Mengklik tombol Detail pada baris pertama...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:15 PM</td>
+        <td>
+          Menunggu halaman berpindah ke Detail CreateEmployeeAPITest...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:15 PM</td>
+        <td>
+          Memvalidasi nilai Angkatan di dalam halaman detail...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:15 PM</td>
+        <td>
+          Skenario Sukses: Berhasil masuk ke Detail CreateEmployeeAPITest dan memvalidasi angkatan 2024 Ganjil.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:15 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FilterByAngkatan : 2024 Genap</p>
+            <p class="text-sm">
+              <span>1:56:15 PM</span> / <span>00:00:09:314</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FilterByAngkatan : 2024 Genap</h5>
+<span class='badge badge-success'>05.16.2026 1:56:15 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:56:25 PM</span>
+<span class='badge badge-default'>00:00:09:314</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:17 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:17 PM</td>
+        <td>
+          === Eksekusi Skenario: Filter Angkatan 2024 Genap ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:18 PM</td>
+        <td>
+          Memilih angkatan: 2024 Genap dari dropdown...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:19 PM</td>
+        <td>
+          Menunggu UI merespons filter...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:19 PM</td>
+        <td>
+          Mengklik tombol Detail pada baris pertama...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:24 PM</td>
+        <td>
+          Menunggu halaman berpindah ke Detail CreateEmployeeAPITest...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:25 PM</td>
+        <td>
+          Memvalidasi nilai Angkatan di dalam halaman detail...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:25 PM</td>
+        <td>
+          Skenario Sukses: Berhasil masuk ke Detail CreateEmployeeAPITest dan memvalidasi angkatan 2024 Genap.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:25 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FilterByAngkatan : 2025 Ganjil</p>
+            <p class="text-sm">
+              <span>1:56:25 PM</span> / <span>00:00:08:660</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FilterByAngkatan : 2025 Ganjil</h5>
+<span class='badge badge-success'>05.16.2026 1:56:25 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:56:33 PM</span>
+<span class='badge badge-default'>00:00:08:660</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:26 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:26 PM</td>
+        <td>
+          === Eksekusi Skenario: Filter Angkatan 2025 Ganjil ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:27 PM</td>
+        <td>
+          Memilih angkatan: 2025 Ganjil dari dropdown...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:28 PM</td>
+        <td>
+          Menunggu UI merespons filter...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:28 PM</td>
+        <td>
+          Mengklik tombol Detail pada baris pertama...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:33 PM</td>
+        <td>
+          Menunggu halaman berpindah ke Detail CreateEmployeeAPITest...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:33 PM</td>
+        <td>
+          Memvalidasi nilai Angkatan di dalam halaman detail...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:33 PM</td>
+        <td>
+          Skenario Sukses: Berhasil masuk ke Detail CreateEmployeeAPITest dan memvalidasi angkatan 2025 Ganjil.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:33 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FilterByAngkatan : 2025 Genap</p>
+            <p class="text-sm">
+              <span>1:56:34 PM</span> / <span>00:00:09:622</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FilterByAngkatan : 2025 Genap</h5>
+<span class='badge badge-success'>05.16.2026 1:56:34 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:56:43 PM</span>
+<span class='badge badge-default'>00:00:09:622</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:36 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:36 PM</td>
+        <td>
+          === Eksekusi Skenario: Filter Angkatan 2025 Genap ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:36 PM</td>
+        <td>
+          Memilih angkatan: 2025 Genap dari dropdown...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:37 PM</td>
+        <td>
+          Menunggu UI merespons filter...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:37 PM</td>
+        <td>
+          Mengklik tombol Detail pada baris pertama...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:43 PM</td>
+        <td>
+          Menunggu halaman berpindah ke Detail CreateEmployeeAPITest...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:43 PM</td>
+        <td>
+          Memvalidasi nilai Angkatan di dalam halaman detail...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:43 PM</td>
+        <td>
+          Skenario Sukses: Berhasil masuk ke Detail CreateEmployeeAPITest dan memvalidasi angkatan 2025 Genap.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:43 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AssignedProgram : testAssignedProgram</p>
+            <p class="text-sm">
+              <span>1:56:43 PM</span> / <span>00:00:05:258</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AssignedProgram : testAssignedProgram</h5>
+<span class='badge badge-success'>05.16.2026 1:56:43 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:56:48 PM</span>
+<span class='badge badge-default'>00:00:05:258</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:45 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:45 PM</td>
+        <td>
+          === Eksekusi Skenario: Pindah ke Tab Assigned Program ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:45 PM</td>
+        <td>
+          Mengklik tombol Detail pada baris pertama...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:48 PM</td>
+        <td>
+          Menunggu transisi URL ke halaman Detail CreateEmployeeAPITest...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:48 PM</td>
+        <td>
+          Mengklik tab Assigned Program...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:48 PM</td>
+        <td>
+          Skenario Sukses: Berhasil masuk ke detail dan berpindah ke tab Assigned Program.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:48 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Activate : testActivateEmployee</p>
+            <p class="text-sm">
+              <span>1:56:49 PM</span> / <span>00:00:08:649</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Activate : testActivateEmployee</h5>
+<span class='badge badge-success'>05.16.2026 1:56:49 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:56:57 PM</span>
+<span class='badge badge-default'>00:00:08:649</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:50 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:50 PM</td>
+        <td>
+          === Eksekusi Skenario: Activate / Inactivate CreateEmployeeAPITest ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:51 PM</td>
+        <td>
+          Mengklik tombol Detail pada baris pertama...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:56 PM</td>
+        <td>
+          Menunggu transisi URL ke halaman Detail CreateEmployeeAPITest...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:57 PM</td>
+        <td>
+          Mengeksekusi tombol Activate/Inactivate...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:57 PM</td>
+        <td>
+          Menunggu modal muncul dan mengklik tombol konfirmasi...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:57 PM</td>
+        <td>
+          Skenario Sukses: Berhasil masuk ke detail dan melakukan konfirmasi Activate/Inactivate.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:56:57 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ResendEmailAcc : testResendEmailAccount</p>
+            <p class="text-sm">
+              <span>1:56:57 PM</span> / <span>00:00:08:255</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ResendEmailAcc : testResendEmailAccount</h5>
+<span class='badge badge-success'>05.16.2026 1:56:57 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:57:06 PM</span>
+<span class='badge badge-default'>00:00:08:255</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:59 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:56:59 PM</td>
+        <td>
+          === Eksekusi Skenario: Resend Email Account ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:00 PM</td>
+        <td>
+          Mengklik tombol Detail pada baris pertama...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:05 PM</td>
+        <td>
+          Menunggu transisi URL ke halaman Detail CreateEmployeeAPITest...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:05 PM</td>
+        <td>
+          Mengeksekusi tombol Resend Email Account...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:06 PM</td>
+        <td>
+          Menunggu modal muncul dan mengklik tombol konfirmasi Resend...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:57:06 PM</td>
+        <td>
+          Skenario Sukses: Berhasil masuk ke detail dan melakukan konfirmasi Resend Email.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:57:06 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ActionDownload : testDownloadEmployeeData</p>
+            <p class="text-sm">
+              <span>1:57:06 PM</span> / <span>00:00:10:243</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ActionDownload : testDownloadEmployeeData</h5>
+<span class='badge badge-success'>05.16.2026 1:57:06 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:57:16 PM</span>
+<span class='badge badge-default'>00:00:10:243</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:07 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:07 PM</td>
+        <td>
+          === Eksekusi Skenario: Download CreateEmployeeAPITest Data ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:08 PM</td>
+        <td>
+          Membuka menu dropdown Action...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:08 PM</td>
+        <td>
+          Mengklik tombol Download...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:08 PM</td>
+        <td>
+          Memantau folder Downloads di Mac untuk memastikan file beres diunduh...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:57:16 PM</td>
+        <td>
+          Skenario Sukses: File berhasil diunduh!
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:57:16 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DeleteEmployee : testDeleteEmployee</p>
+            <p class="text-sm">
+              <span>1:57:16 PM</span> / <span>00:00:08:202</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">DeleteEmployee : testDeleteEmployee</h5>
+<span class='badge badge-success'>05.16.2026 1:57:16 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:57:24 PM</span>
+<span class='badge badge-default'>00:00:08:202</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:18 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:18 PM</td>
+        <td>
+          === Eksekusi Skenario: Delete CreateEmployeeAPITest ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:18 PM</td>
+        <td>
+          Mengklik tombol Detail pada baris pertama...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:24 PM</td>
+        <td>
+          Menunggu transisi URL ke halaman Detail CreateEmployeeAPITest...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:24 PM</td>
+        <td>
+          Mengeksekusi tombol Delete CreateEmployeeAPITest...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:24 PM</td>
+        <td>
+          Menunggu modal muncul dan mengklik tombol konfirmasi Delete...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:57:24 PM</td>
+        <td>
+          Skenario Sukses: Berhasil masuk ke detail dan melakukan konfirmasi Delete CreateEmployeeAPITest.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:57:24 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AddProgramStudi : Test Valid</p>
+            <p class="text-sm">
+              <span>1:57:24 PM</span> / <span>00:00:17:926</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">AddProgramStudi : Test Valid</h5>
+<span class='badge badge-success'>05.16.2026 1:57:24 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:57:42 PM</span>
+<span class='badge badge-default'>00:00:17:926</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:26 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:26 PM</td>
+        <td>
+          === Eksekusi Skenario: Test Valid ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:28 PM</td>
+        <td>
+          Lagi ngecek hasil inputannya nih...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:57:42 PM</td>
+        <td>
+          Skenario Positif Berhasil: Data valid diterima dan form tertutup.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:57:42 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AddProgramStudi : Scenario Name Null</p>
+            <p class="text-sm">
+              <span>1:57:42 PM</span> / <span>00:00:03:211</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">AddProgramStudi : Scenario Name Null</h5>
+<span class='badge badge-success'>05.16.2026 1:57:42 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:57:46 PM</span>
+<span class='badge badge-default'>00:00:03:211</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:44 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:44 PM</td>
+        <td>
+          === Eksekusi Skenario: Scenario Name Null ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:45 PM</td>
+        <td>
+          Lagi ngecek hasil inputannya nih...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:57:46 PM</td>
+        <td>
+          Test Gagal: Sengaja Digagalkan (FAILED): Skenario Scenario Name Null dipaksa fail sesuai instruksi.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddProgramStudi_1778914666068.png' src="screenshot/testAddProgramStudi_1778914666068.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
-        <li class="test-item"  status="pass" test-id="25"
+        <li class="test-item"  status="fail" test-id="25"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AddProgramStudi : Scenario Description Null</p>
+            <p class="text-sm">
+              <span>1:57:46 PM</span> / <span>00:00:07:508</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">AddProgramStudi : Scenario Description Null</h5>
+<span class='badge badge-success'>05.16.2026 1:57:46 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:57:53 PM</span>
+<span class='badge badge-default'>00:00:07:508</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:47 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:47 PM</td>
+        <td>
+          === Eksekusi Skenario: Scenario Description Null ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:53 PM</td>
+        <td>
+          Lagi ngecek hasil inputannya nih...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:57:53 PM</td>
+        <td>
+          Test Gagal: Sengaja Digagalkan (FAILED): Skenario Scenario Description Null dipaksa fail sesuai instruksi.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddProgramStudi_1778914673668.png' src="screenshot/testAddProgramStudi_1778914673668.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AddProgramStudi : Scenario All Null</p>
+            <p class="text-sm">
+              <span>1:57:53 PM</span> / <span>00:00:05:967</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">AddProgramStudi : Scenario All Null</h5>
+<span class='badge badge-success'>05.16.2026 1:57:53 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:57:59 PM</span>
+<span class='badge badge-default'>00:00:05:967</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:55 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:55 PM</td>
+        <td>
+          === Eksekusi Skenario: Scenario All Null ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:57:59 PM</td>
+        <td>
+          Lagi ngecek hasil inputannya nih...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:57:59 PM</td>
+        <td>
+          Test Gagal: Sengaja Digagalkan (FAILED): Skenario Scenario All Null dipaksa fail sesuai instruksi.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddProgramStudi_1778914679727.png' src="screenshot/testAddProgramStudi_1778914679727.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AddProgramStudi : Scenario Special Character</p>
+            <p class="text-sm">
+              <span>1:57:59 PM</span> / <span>00:00:03:396</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">AddProgramStudi : Scenario Special Character</h5>
+<span class='badge badge-success'>05.16.2026 1:57:59 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:58:03 PM</span>
+<span class='badge badge-default'>00:00:03:396</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:01 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:01 PM</td>
+        <td>
+          === Eksekusi Skenario: Scenario Special Character ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:03 PM</td>
+        <td>
+          Lagi ngecek hasil inputannya nih...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:58:03 PM</td>
+        <td>
+          Test Gagal: Sengaja Digagalkan (FAILED): Skenario Scenario Special Character dipaksa fail sesuai instruksi.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddProgramStudi_1778914683212.png' src="screenshot/testAddProgramStudi_1778914683212.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AddProgramStudi : Scenario Emoticon</p>
+            <p class="text-sm">
+              <span>1:58:03 PM</span> / <span>00:00:06:224</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">AddProgramStudi : Scenario Emoticon</h5>
+<span class='badge badge-success'>05.16.2026 1:58:03 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:58:09 PM</span>
+<span class='badge badge-default'>00:00:06:224</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:04 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:04 PM</td>
+        <td>
+          === Eksekusi Skenario: Scenario Emoticon ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:09 PM</td>
+        <td>
+          Lagi ngecek hasil inputannya nih...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:58:09 PM</td>
+        <td>
+          Test Gagal: Sengaja Digagalkan (FAILED): Skenario Scenario Emoticon dipaksa fail sesuai instruksi.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddProgramStudi_1778914689528.png' src="screenshot/testAddProgramStudi_1778914689528.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="29"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AddProgramStudi : Scenario Unique Symbols</p>
+            <p class="text-sm">
+              <span>1:58:09 PM</span> / <span>00:00:06:216</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">AddProgramStudi : Scenario Unique Symbols</h5>
+<span class='badge badge-success'>05.16.2026 1:58:09 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:58:15 PM</span>
+<span class='badge badge-default'>00:00:06:216</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:10 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:10 PM</td>
+        <td>
+          === Eksekusi Skenario: Scenario Unique Symbols ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:15 PM</td>
+        <td>
+          Lagi ngecek hasil inputannya nih...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>1:58:15 PM</td>
+        <td>
+          Test Gagal: Sengaja Digagalkan (FAILED): Skenario Scenario Unique Symbols dipaksa fail sesuai instruksi.
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='screenshot/testAddProgramStudi_1778914695836.png' src="screenshot/testAddProgramStudi_1778914695836.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">SearchProgramStudi : testSearchProgramStudi</p>
             <p class="text-sm">
-              <span>7:15:37 PM</span> / <span>00:00:00:000</span>
+              <span>1:58:15 PM</span> / <span>00:00:11:895</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -496,16 +2229,356 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">SearchProgramStudi : testSearchProgramStudi</h5>
-<span class='badge badge-success'>05.11.2026 7:15:37 PM</span>
-<span class='badge badge-danger'>05.11.2026 7:15:37 PM</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-success'>05.16.2026 1:58:15 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:58:27 PM</span>
+<span class='badge badge-default'>00:00:11:895</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div>          </div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:17 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:17 PM</td>
+        <td>
+          === Eksekusi Skenario: Search Program Studi ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:21 PM</td>
+        <td>
+          Berpindah ke tab Program Studi...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:21 PM</td>
+        <td>
+          Melakukan pencarian dengan keyword: 'QA Batch 3+'...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:21 PM</td>
+        <td>
+          Menunggu hasil pencarian dimuat di tabel...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:27 PM</td>
+        <td>
+          Memvalidasi data pada baris pertama...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:58:27 PM</td>
+        <td>
+          Skenario Sukses: Pencarian Program Studi berhasil menampilkan data 'QA Batch 3+'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:58:27 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">EditProgramStudi : testEditProgramStudi</p>
+            <p class="text-sm">
+              <span>1:58:27 PM</span> / <span>00:00:08:536</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">EditProgramStudi : testEditProgramStudi</h5>
+<span class='badge badge-success'>05.16.2026 1:58:27 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:58:36 PM</span>
+<span class='badge badge-default'>00:00:08:536</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:29 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:29 PM</td>
+        <td>
+          === Eksekusi Skenario: Edit Program Studi ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:29 PM</td>
+        <td>
+          Berpindah ke tab Program Studi...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:30 PM</td>
+        <td>
+          Mengklik tombol Detail pada baris pertama Program Studi...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:35 PM</td>
+        <td>
+          Menunggu transisi URL ke halaman Detail Program Studi...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:35 PM</td>
+        <td>
+          Mengklik tombol Edit Program Studi...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:36 PM</td>
+        <td>
+          Mengisi form Edit Program Studi...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:36 PM</td>
+        <td>
+          Menyimpan perubahan (Save Changes)...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:58:36 PM</td>
+        <td>
+          Skenario Sukses: Form Edit Program Studi berhasil disubmit dengan lancar.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:58:36 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ExportCSV : testExportCSV</p>
+            <p class="text-sm">
+              <span>1:58:36 PM</span> / <span>00:00:10:961</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ExportCSV : testExportCSV</h5>
+<span class='badge badge-success'>05.16.2026 1:58:36 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:58:47 PM</span>
+<span class='badge badge-default'>00:00:10:961</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:38 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:44 PM</td>
+        <td>
+          Mengeksekusi tombol Export CSV...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:45 PM</td>
+        <td>
+          Menunggu file CSV selesai diunduh secara dinamis...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:58:47 PM</td>
+        <td>
+          Skenario Sukses: File CSV berhasil terdeteksi di folder downloads project.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:58:47 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">DeleteProgramStudi : testDeleteProgramStudi</p>
+            <p class="text-sm">
+              <span>1:58:47 PM</span> / <span>00:00:03:958</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">DeleteProgramStudi : testDeleteProgramStudi</h5>
+<span class='badge badge-success'>05.16.2026 1:58:47 PM</span>
+<span class='badge badge-danger'>05.16.2026 1:58:51 PM</span>
+<span class='badge badge-default'>00:00:03:958</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:48 PM</td>
+        <td>
+          Membuka browser dan menuju ke: https://lms-b2b.do.dibimbing.id/dibimbingqa/login
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:48 PM</td>
+        <td>
+          === Eksekusi Skenario: Delete Program Studi ===
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:49 PM</td>
+        <td>
+          Berpindah ke tab Program Studi...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:49 PM</td>
+        <td>
+          Mengklik tombol Detail pada baris pertama Program Studi...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:50 PM</td>
+        <td>
+          Menunggu transisi URL ke halaman Detail Program Studi...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:50 PM</td>
+        <td>
+          Mengklik tombol Edit Program Studi...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:50 PM</td>
+        <td>
+          Mengklik tombol Delete berikon tempat sampah...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>1:58:51 PM</td>
+        <td>
+          Menunggu pop-up peringatan dan mengklik konfirmasi Delete...
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:58:51 PM</td>
+        <td>
+          Skenario Sukses: Berhasil melakukan konfirmasi penghapusan Program Studi.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>1:58:51 PM</td>
+        <td>
+          Test Berhasil!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
         </li>
       </ul>
     </div>
@@ -521,25 +2594,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 11, 2026 07:15:15 PM</h3>
+<h3>May 16, 2026 01:53:58 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 11, 2026 07:15:40 PM</h3>
+<h3>May 16, 2026 01:58:51 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>15</h3>
+<h3>18</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>15</h3>
 </div></div>
 </div>
 </div>
@@ -555,12 +2628,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>15</b> tests passed
+<div><small data-tooltip='54%'>
+<b>18</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='45%'><b>15</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -578,10 +2651,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='19%'><b>36</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>3</b> others
+<small data-tooltip='7%'><b>15</b> events failed,
+<b data-tooltip='%'>138</b> others
 </small>
 </div>
 </div>
@@ -597,7 +2670,7 @@
 </div></div>
 <script>
 var timeline = {
-"Activate : testActivateEmployee":8.761,"AddEmployee : Test Valid":0,"AddProgramStudi : Test Valid":0,"AssignedProgram : testAssignedProgram":0,"DeleteEmployee : testDeleteEmployee":0,"DeleteProgramStudi : testDeleteProgramStudi":0.001,"ActionDownload : testDownloadEmployeeData":0,"EditEmployee : testEditEmployee":0.001,"EditProgramStudi : testEditProgramStudi":0,"ExportCSV : testExportCSV":0,"FilterByAngkatan : 2024 Ganjil":0,"LoginUITest : testLoginSuccessfully":0,"ResendEmailAcc : testResendEmailAccount":0,"SearchEmployeeList : Search by Email":0,"SearchProgramStudi : testSearchProgramStudi":0
+"LoginUITest : testLoginSuccessfully":3.193,"AddEmployee : Test Valid":20.065,"AddEmployee : Scenario Name Null":10.301,"AddEmployee : Scenario Employee ID Null":8.866,"AddEmployee : Scenario Email Duplicate":8.426,"AddEmployee : Scenario Phone Invalid":7.803,"AddEmployee : Scenario Role Null":7.928,"AddEmployee : Scenario All Field Null":7.719,"AddEmployee : Scenario Special Character":7.712,"AddEmployee : Scenario Emoticon":7.655,"AddEmployee : Scenario Unique Symbols":7.709,"SearchEmployeeList : Search by Email":10.029,"EditEmployee : testEditEmployee":10.03,"FilterByAngkatan : 2024 Ganjil":8.93,"FilterByAngkatan : 2024 Genap":9.314,"FilterByAngkatan : 2025 Ganjil":8.66,"FilterByAngkatan : 2025 Genap":9.622,"AssignedProgram : testAssignedProgram":5.258,"Activate : testActivateEmployee":8.649,"ResendEmailAcc : testResendEmailAccount":8.255,"ActionDownload : testDownloadEmployeeData":10.243,"DeleteEmployee : testDeleteEmployee":8.202,"AddProgramStudi : Test Valid":17.926,"AddProgramStudi : Scenario Name Null":3.211,"AddProgramStudi : Scenario Description Null":7.508,"AddProgramStudi : Scenario All Null":5.967,"AddProgramStudi : Scenario Special Character":3.396,"AddProgramStudi : Scenario Emoticon":6.224,"AddProgramStudi : Scenario Unique Symbols":6.216,"SearchProgramStudi : testSearchProgramStudi":11.895,"EditProgramStudi : testEditProgramStudi":8.536,"ExportCSV : testExportCSV":10.961,"DeleteProgramStudi : testDeleteProgramStudi":3.958
 };
 </script>
 <div class="row">
@@ -629,7 +2702,7 @@ var timeline = {
 </tr>
 <tr>
 <td>Version Details</td>
-<td>- RestAssured: v5.3.0 <br>- Chrome: v147.0.7727.138 <br>- Postman for Mac: v12.2.4 <br>- MacOS Tahoe: v26.4.1 <br>- Java: v21 <br>- App Version: 1.0.0</td>
+<td>- RestAssured: v5.3.0 <br>- Chrome: v148.0.7778.168 <br>- Postman for Mac: v12.10.6 <br>- MacOS Tahoe: v26.5 <br>- Java: v21 <br>- App Version: 1.0.0</td>
 </tr>
 <tr>
 <td>UI Base URL</td>
@@ -644,8 +2717,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 15,
-failParent: 0,
+passParent: 18,
+failParent: 15,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -661,11 +2734,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 0,
+passEvents: 36,
+failEvents: 15,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 3
+infoEvents: 138
 };
 </script>        </div>
       </div>

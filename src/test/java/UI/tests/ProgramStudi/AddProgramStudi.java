@@ -89,7 +89,6 @@ public class AddProgramStudi extends BaseUITest {
 
         programStudiPage.clickAddProgramStudiButton();
 
-        // Panggil form filler
         programStudiPage.fillProgramStudiForm(psName, psDescription);
         programStudiPage.clickSubmitConfirmButton();
 
@@ -98,10 +97,8 @@ public class AddProgramStudi extends BaseUITest {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        // --- ASSERTION LOGIC (HANYA TEST VALID YANG PASS) ---
 
         if (scenarioName.equals("Test Valid")) {
-            // JALUR POSITIF: Form HARUS tertutup (Test akan Pass jika sukses tertutup)
             try {
                 boolean isFormClosed = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("name")));
                 Assert.assertTrue(isFormClosed, "BUG: Data Valid tapi form tidak mau tertutup!");
@@ -111,7 +108,6 @@ public class AddProgramStudi extends BaseUITest {
                 Assert.fail("BUG: Form tidak tertutup setelah klik submit pada data VALID.");
             }
         } else {
-            // SEMUA SKENARIO SELAIN "Test Valid" AKAN DIPAKSA FAIL
             String failMessage = "Sengaja Digagalkan (FAILED): Skenario " + scenarioName + " dipaksa fail sesuai instruksi.";
             logger.severe(failMessage);
             Assert.fail(failMessage);

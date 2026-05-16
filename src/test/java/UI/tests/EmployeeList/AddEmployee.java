@@ -28,7 +28,7 @@ public class AddEmployee extends BaseUITest {
                         "QA Engineer Valid",
                         "123456789",
                         "qa.valid" + System.currentTimeMillis() + "@gmail.com",
-                        "0101010101",
+                        "081323459876",
                         "QA Batch 3+",
                         "QA Engineer"
                 },

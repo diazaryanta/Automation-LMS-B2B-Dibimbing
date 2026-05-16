@@ -35,20 +35,16 @@ public class FilterByAngkatan extends BaseUITest {
         logger.info("=== Eksekusi Skenario: Filter Angkatan " + targetAngkatan + " ===");
         test.info("=== Eksekusi Skenario: Filter Angkatan " + targetAngkatan + " ===");
 
-        // 1. LoginAPITest & Navigasi
         loginPage.loginToLms(ConfigReader.getProperty("email"), ConfigReader.getProperty("password"));
         employeePage.clickEmployeeMenu();
 
-        // 2. Eksekusi Filter
         test.info("Memilih angkatan: " + targetAngkatan + " dari dropdown...");
         employeePage.selectAngkatan(targetAngkatan);
 
-        // Menahan bot sebentar memastikan filter selesai di-render (Smart Wait)
         test.info("Menunggu UI merespons filter...");
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(webDriver -> employeePage.getSelectedAngkatanText().contains(targetAngkatan));
 
-        // 3. Masuk ke Detail & Validasi URL
         test.info("Mengklik tombol Detail pada baris pertama...");
         employeePage.clickFirstRowDetailButton();
 
@@ -56,7 +52,6 @@ public class FilterByAngkatan extends BaseUITest {
         boolean isUrlChangedToDetail = wait.until(ExpectedConditions.urlMatches(".*/admin/employee/[a-zA-Z0-9-]+"));
         Assert.assertTrue(isUrlChangedToDetail, "Bug: URL gagal bertransisi ke halaman detail!");
 
-        // 4. Validasi Teks di Halaman Detail
         test.info("Memvalidasi nilai Angkatan di dalam halaman detail...");
         String actualAngkatanInDetail = employeePage.getAngkatanTextInDetail(targetAngkatan);
 
